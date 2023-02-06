@@ -85,7 +85,7 @@ class EnchantmentReplenish(
 
             data.age = 0
 
-            plugin.scheduler.run {
+            plugin.scheduler.runLater(5L) {
                 block.type = type
                 block.blockData = data
 
